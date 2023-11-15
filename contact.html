@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Us</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="contactstyles.css">
 </head>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="index.html"><img src="images/The Local Hut.png" alt="logo" width="50px" height="50px"></a>
+            <a id="the-local-hut" href="index.html">The Local Hut</a>
+        </div>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="shops.html">shops</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact </a></li>
+    </div>
+    </ul>
+</header>
 <body>
-    <h1>Contact Us!</h1>
-    <p>Want us to feature your small business?
-    </p>
-    <p>No Problem!</p>
-    <P>Simply fill out a form and we will get back to you as soon as possible!</P>
+    <fieldset>
+        <h1>Contact Us!</h1>
+        <input type="text" required name="name" id="name" class="contact-info" placeholder="Name" title="First and Last Name">
+        <input type="email" required name="email" id="email" class="
+        contact-info" placeholder="Email" title="Input Your Email Address"><br>
+        <input type="tel" name="telephone" id="telephone" placeholder="Phone Number(optional)" class="contact-info" title="Input your local Phone number">
+        <input type="text" name="description" id="description" class="contact-info" placeholder="Tell us about your business!" title="Short description of your business">
+
+    </fieldset>
 </body>
 </html>
