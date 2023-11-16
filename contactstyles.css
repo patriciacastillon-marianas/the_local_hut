@@ -1,3 +1,55 @@
+.header-content {
+    box-shadow: 0 3px 9px -6px;
+}
+
 fieldset {
-    display: ;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding-bottom: 100px;
+    padding: 20px;
+}
+
+.input-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+h1 {
+    grid-column: span 2;
+}
+
+.contact-info {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#email,
+#description {
+    grid-column: span 2;
+}
+
+#description {
+    grid-row: span 10;
+    height: 100px;
+}
+
+body {
+    background-color: #E6E1D5;
+}
+
+#submit-contact {
+    max-width: 45%;
+    margin-top: 15px;
+}
+.contact-box {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
 }
