@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="contactstyles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<header>
-    <div class="header-content">
-        <div class="logo">
-            <a href="index.html"><img src="images/The Local Hut.png" alt="logo" width="50px" height="50px"></a>
-            <a id="the-local-hut" href="index.html">The Local Hut</a>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contactstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto&family=Sintony&display=swap"
+        rel="stylesheet">
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/The Local Hut.png" alt="logo" width="50px" height="50px"></a>
+                <a id="the-local-hut" href="index.html">The Local Hut</a>
+            </div>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="shops.html">shops</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact </a></li>
         </div>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="shops.html">shops</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact </a></li>
-    </div>
-    </ul>
-</header>
+        </ul>
+    </header>
 
 <body>
     <div class="contact-box">
-    <fieldset>
-        <h1>Want your small business featured?</h1>
-        <p>No Problem! Simply fill out the form, and we'll get back to you in no time!</p><br>
-        <div class="input-contact">
-        <input type="text" required name="name" id="name" class="contact-info" placeholder="Name" title="First and Last Name">
-        <input type="tel" name="telephone" id="telephone" placeholder="Phone Number(optional)" class="contact-info" title="Input your local Phone number">
-        <input type="email" required name="email" id="email" class="
-        contact-info" placeholder="Email" title="Input Your Email Address">
-        <textarea type="text" name="description" id="description" class="contact-info" placeholder="Tell us more about your business!" title="Short description of your business"></textarea>
+        <fieldset>
+            <h1>Contact Us!</h1>
+            <p>Want your business featured? Simply fill out the form, <br>and we'll get back to you in no time!</p><br>
+            <form action="https://httpbin.org/anything" method="get">
+                <div class="input-contact">
+                    <div class="name-phone">
+                        <input type="text" required name="name" id="name" class="contact-info" placeholder="Name"
+                            title="First and Last Name">
+                        <input type="tel" name="telephone" id="telephone" placeholder="Phone Number (optional)"
+                            class="contact-info" title="Input your local Phone number">
+                    </div>
+                    <div class="email-desc">
+                        <input type="email" required name="email_address" id="email-address" class="
+        contact-info" placeholder="Email*" title="Input Your Email Address">
+                        <textarea type="text" name="biz_description" id="biz-description" class="contact-info"
+                            placeholder="Tell us more about your business!"
+                            title="Short description of your business"></textarea>
+                    </div>
+                </div>
+                <button id="submit-contact" type="submit">Submit</button>
+            </form>
+        </fieldset>
     </div>
-        <button id="submit-contact" type="submit">Submit</button>
-    </fieldset>
-</div>
 </body>
+
 </html>
