@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Napu Native</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="layouts.css">
-    <script defer src="app.js"></script>
+    <script defer src="nav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,48 +18,31 @@
 
 <body>
     <header>
-        <div class="header-content">
+        <div class="header-content flex">
             <div class="logo">
                 <a href="index.html"><img src="images/The Local Hut.png" alt="logo" width="50px" height="50px"></a>
                 <a id="the-local-hut" href="index.html">The Local Hut</a>
             </div>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="shops.html">shops</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">contact </a></li>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="shops.html">shops</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact </a></li>
+                    <li><a href="contact.html">feedback</a></li>
         </div>
         </ul>
+        </nav>
     </header>
+
+
     <div class="first-picture-slide">
         <img src="images/head2.png" alt="head1">
         <div class="textoverlay">your<br>
             <div class="bold-overlay">local one-stop</div>magazine
         </div>
-    </div>
-
-
-
-
-
-
-    <div class="extra-containers">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <h1>Keep up with local!</h1>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+    </div> 
 
 
 
@@ -122,8 +104,10 @@
                         href="https://www.instagram.com/napunative/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
                         target="_blank">SHOP HERE</a>
                 </section>
-                <img id="napu-1" src="images/napu-1.JPG" alt="">
-                <img id="napu-2" src="images/napu-2.JPG" alt="">
+                <div class="box-images" style="max-width: 500px"">
+                    <img id=" napu-1" src="images/napu-1.JPG" alt="">
+                    <img id="napu-2" src="images/napu-2.JPG" alt="">
+                </div>
             </div>
         </div>
     </div>

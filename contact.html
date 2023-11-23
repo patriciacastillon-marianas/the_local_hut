@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="nav.js"></script>
     <link rel="stylesheet" href="contactstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto&family=Sintony&display=swap"
         rel="stylesheet">
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <a href="index.html"><img src="images/The Local Hut.png" alt="logo" width="50px" height="50px"></a>
-                <a id="the-local-hut" href="index.html">The Local Hut</a>
+        <header>
+            <div class="header-content flex">
+                <div class="logo">
+                    <a href="index.html"><img src="images/The Local Hut.png" alt="logo" width="50px" height="50px"></a>
+                    <a id="the-local-hut" href="index.html">The Local Hut</a>
+                </div>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span></button>
+                <nav>
+                    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="shops.html">shops</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact </a></li>
+                        <li><a href="contact.html">feedback</a></li>
             </div>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="shops.html">shops</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">contact </a></li>
-        </div>
-        </ul>
-    </header>
-
+            </ul>
+            </nav>
+        </header>
 <body>
     <div class="contact-box">
         <fieldset>

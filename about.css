@@ -5,6 +5,7 @@ background: radial-gradient(circle, rgba(211,154,152,1) 0%, rgba(230,225,213,1) 
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin: 0px 20px 0px 20px;
 }
 .item {
@@ -16,7 +17,7 @@ background: radial-gradient(circle, rgba(211,154,152,1) 0%, rgba(230,225,213,1) 
 font-size: 35px;
     
 }
-.item-2, .item-4, .item-6, .item-8 {
+.about-container .item-2 {
     font-size: 30px;
     grid-column: 2;
 }
