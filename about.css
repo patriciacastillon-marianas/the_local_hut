@@ -1,17 +1,13 @@
-body {
+.about-body {
     background: rgb(211,154,152);
 background: radial-gradient(circle, rgba(211,154,152,1) 0%, rgba(230,225,213,1) 100%);
 }
 .about-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    margin: 0px 20px 0px 20px;
+    display: flex;
 }
-.item {
+.about {
     border: 1px solid black;
-    padding: 100px;
-    
+    padding: 10px;
 }
 .item-1, .item-3, .item-5, .item-7 {
 font-size: 35px;
@@ -19,5 +15,4 @@ font-size: 35px;
 }
 .about-container .item-2 {
     font-size: 30px;
-    grid-column: 2;
 }
